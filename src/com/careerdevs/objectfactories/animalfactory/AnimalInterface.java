@@ -1,7 +1,5 @@
 package com.careerdevs.objectfactories.animalfactory;
 
-import com.careerdevs.asktheuser.User;
-
 import java.util.Scanner;
 
 public class AnimalInterface {
@@ -21,10 +19,10 @@ public class AnimalInterface {
         String breed = scanner.nextLine();
 
 
-        System.out.println("Age: ");
+        System.out.println("How much does you animal way? (please put information in pounds (lbs): ");
         int pounds = scanner.nextInt();
 
-        User createAnAnimal = new User(name, breed, pounds);
+        Animal createAnAnimal = new Animal(name, breed, pounds);
 
         System.out.println(createAnAnimal);
     }
